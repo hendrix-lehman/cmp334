@@ -13,9 +13,9 @@ __start:  # the label __start, think of it as an address in the instruction memo
 	
 	lb $t1, hello # lb instructions load byte (8-bits) of data into a register
 	
-	# 'store' or moving values from registers to data segment
 	li $t1, 0x646f6f47
 	
+	# 'store' or moving values from registers to data segment	
 	sw $t1, store
 	
 	sh $t1, store + 4
